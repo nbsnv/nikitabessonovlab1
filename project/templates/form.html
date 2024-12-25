@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Форма заказа</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Закажите ремонт телефона</h1>
+        </header>
+        <form method="post" action="/form">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone_model">Модель телефона:</label>
+            <input type="text" id="phone_model" name="phone_model" required>
+            
+            <label for="issue">Опишите проблему:</label>
+            <textarea id="issue" name="issue" rows="4" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+</body>
+</html>
